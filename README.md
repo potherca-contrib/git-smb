@@ -84,3 +84,15 @@ The only configuration currently is the theme, with the following options:
 - zelda, for Legend Of Zelda themed sounds effects
 - cc, for Command & Conquer themed sound effects
 - dn, for Duke Nukem themed sound effects
+
+To disable a sound, edit the `sounds.json` of the sound theme, and set the value for the sound that should be disabled to an empty string `""`.
+For instance, to disable the error sound in the Super Mario Bros theme:
+
+```json
+{
+  "commands": {
+    // ...
+  },
+  "error": "" // <-- this will now no longer make a sound on error
+}
+```
